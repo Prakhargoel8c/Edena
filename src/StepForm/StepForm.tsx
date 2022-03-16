@@ -6,13 +6,18 @@ import Steps from './Steps';
 import { Step, OkStep } from '../types/Step';
 import './StepForm.scss';
 
-const StepForm: React.FC<{ steps: Step[]; nextStepText: string; okStep: OkStep }> = ({ steps, nextStepText, okStep }) => {
-  const [currentStep, setCurrentStep] = useState<number>(3);
-  const [values, setValues] = useState<Object>({});
+const StepForm: React.FC<{
+  steps: Step[];
+  nextStepText: string;
+  okStep: OkStep;
+  value: Object;
+  setValue: React.Dispatch<React.SetStateAction<Object>>;
+}> = ({ steps, nextStepText, okStep, value, setValue }) => {
+  const [currentStep, setCurrentStep] = useState<number>(1);
   const [form] = Form.useForm();
   const isOkStep = currentStep === steps.length + 1;
   const saveStep = (stepValues: Object) => {
-    setValues({ ...values, ...stepValues });
+    setValue({ ...value, ...stepValues });
     setCurrentStep(currentStep + 1);
   };
   const submitStep = () => form.submit();

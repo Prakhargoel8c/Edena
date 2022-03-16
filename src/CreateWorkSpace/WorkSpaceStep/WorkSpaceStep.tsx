@@ -7,7 +7,7 @@ const WorkSpaceStep: StepFormComponent = ({ form, submit }) => {
       <Form.Item name="workspace" label="Workspace Name" rules={[{ required: true, message: 'Please input your workspace name!' }]}>
         <Input placeholder="Eden" />
       </Form.Item>
-      <Form.Item name="workspaceUrl" label="Workspace Url">
+      <Form.Item name="workspaceUrl" label="Workspace Url" rules={[{ type: 'url', message: 'Please enter valid url' }]}>
         <Input placeholder="Example" addonBefore="www.eden.com/" />
       </Form.Item>
     </Form>
