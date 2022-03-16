@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'lantern-regular';
+  src: url('../public/fonts/latent-regular.ttf') format('truetype');
+}
+.app {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  // font-family: 'lantern-regular';
+}

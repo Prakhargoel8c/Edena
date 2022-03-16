@@ -1,0 +1,83 @@
+@mixin text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.step-form {
+  min-width: 70%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    min-width: 90%;
+  }
+  .form-wrapper {
+    flex-grow: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .heading {
+      @include text-ellipsis();
+      margin: 0% 10%;
+      font-weight: 700;
+    }
+    .sub-heading {
+      @include text-ellipsis();
+      margin: 0% 10%;
+      color: var(--grey-text);
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .form-content {
+      flex-grow: 0.8;
+      padding-top: 5%;
+      display: flex;
+      justify-content: center;
+      & > .ant-form {
+        flex-basis: max(38%, 350px);
+      }
+    }
+    .ok-wrapper {
+      padding-bottom: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 9%;
+      .ok-icon {
+        height: 70px;
+        width: 70px;
+        background-color: var(--primary-color);
+        border-radius: 35px;
+        .anticon-check {
+          color: white;
+          padding-top: 25px;
+          font-size: 20px;
+        }
+      }
+      .ok-headings {
+        padding-top: 5%;
+        .heading,
+        .sub-heading {
+          margin: 0%;
+        }
+      }
+    }
+    .submit-wrapper {
+      display: flex;
+      justify-content: center;
+      .submit {
+        flex-basis: max(39%, 360px);
+        color: white;
+        background-color: var(--primary-color);
+        border: 0.5px solid var(--secondary-color);
+        border-radius: 8px;
+        padding: 1% 0%;
+        width: 100%;
+        flex-grow: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}

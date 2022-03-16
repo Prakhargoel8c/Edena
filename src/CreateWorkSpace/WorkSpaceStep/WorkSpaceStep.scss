@@ -1,0 +1,18 @@
+.work-step {
+  .ant-input {
+    padding: 2% 3%;
+    border-radius: 8px;
+  }
+  .ant-input-group {
+    .ant-input-group-addon {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-color: #f8f9fc;
+      color: var(--grey-text);
+      font-weight: 500;
+    }
+    .ant-input {
+      padding: 3%;
+    }
+  }
+}
