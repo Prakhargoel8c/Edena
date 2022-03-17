@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Edena/static/css/main.4a380bac.css",
+    "main.css": "/Edena/static/css/main.f08d798c.css",
     "main.js": "/Edena/static/js/main.a4b7023d.js",
     "static/js/787.c826789d.chunk.js": "/Edena/static/js/787.c826789d.chunk.js",
     "static/media/latent-regular.ttf": "/Edena/static/media/latent-regular.2c0f385375648c0e0721.ttf",
     "index.html": "/Edena/index.html",
-    "main.4a380bac.css.map": "/Edena/static/css/main.4a380bac.css.map",
+    "main.f08d798c.css.map": "/Edena/static/css/main.f08d798c.css.map",
     "main.a4b7023d.js.map": "/Edena/static/js/main.a4b7023d.js.map",
     "787.c826789d.chunk.js.map": "/Edena/static/js/787.c826789d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a380bac.css",
+    "static/css/main.f08d798c.css",
     "static/js/main.a4b7023d.js"
   ]
 }
