@@ -29,7 +29,9 @@
     height: auto;
     margin-bottom: 5%;
   }
-  &.active {
+  &.active,
+  &:hover,
+  &:focus {
     border-color: var(--primary-color);
   }
 }

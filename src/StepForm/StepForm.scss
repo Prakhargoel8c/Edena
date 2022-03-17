@@ -77,6 +77,9 @@
         width: 100%;
         flex-grow: 0;
         cursor: pointer;
+        &:hover {
+          background-color: #7f69f0;
+        }
       }
     }
   }
